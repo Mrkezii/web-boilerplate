@@ -1,0 +1,137 @@
+/****************************GENERAL************************************/
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    background: #f9f2f4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-top: 80px;
+}
+.nav-center,
+.center{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+a{
+    color: #191919;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/****************************NAV BAR************************************/
+  
+.nav{
+    background: #ffffff;
+    min-height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.nav .left{
+    float: left;
+    margin-left: 0;
+}
+.nav .left li{
+    font-size: 14px;
+    float: left;
+}
+.nav .left li a{
+    display: block;
+    padding: 9px 15px;
+    line-height: 30px;
+}
+.nav .left li a:hover{
+    background: #f2f2f2;
+}
+
+.nav .right{
+    float: right;
+    margin-right: 0;
+}
+.nav .right li{
+    font-size: 14px;
+    float: left;
+}
+.nav .right li a{
+    display: block;
+    padding: 9px 15px;
+    line-height: 30px;
+}
+.nav .right li a:hover{
+    background: #f2f2f2;
+}
+
+.toggle-nav{
+    display: none;
+}
+
+.nav-mobile style{
+    display: block;
+}
+
+/*********NAV BAR END**********/
+
+/****************************MEDIA QUERIES************************************/
+@media only screen and (max-width: 640px){
+    .nav{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .nav-center{
+        width: 100%;
+    }
+    .toggle-nav{
+        display: block;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        line-height: 30px;
+    }
+    .toggle-nav:after{
+        content: ' Menu';
+    }
+
+    .nav-mobile{
+        display: none;
+    }
+
+    .style-mobile{
+        background: #ffffff;
+        top : 51px;
+        position : absolute;
+        width : 100%;
+    }
+
+    .style-mobile li{
+        display: block;
+        width: 100%;
+    }
+
+    .nav .right{
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+
+    .nav .left{
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+}
+
+@media only screen and (min-width: 641px){
+    .nav-mobile {
+        display:block !important;
+    }
+}
+/*********MEDIA QUERY END**********/
